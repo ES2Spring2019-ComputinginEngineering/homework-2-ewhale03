@@ -36,7 +36,7 @@ def intersectionoftwolines_y(m1, b1, m2, b2):
     # Calculate y for the point where two equations:
     # y = (m1 * x) + b1 and y = (m2 * x) + b2 intersect.
 
-    # y = -m2b1 - m1b2 / m2-m1
+    # y = -m2b1 + m1b2 / m2-m1
 
     y = ((-m2 * b1 + m1 * b2)/(m1 - m2))       #replace this with your calculation for y
 
@@ -80,7 +80,7 @@ def areaofatriangle(m1, b1, m2, b2, m3, b3):
     c = math.sqrt((x3-x2)**2 + (y3-y2)**2)
 
     s = (a + b + c)/2
-    #a = y1 b = y2 c = y3  area = math.sqrt(s * (s-((m1*x)+b1) * (s-
+   
 
     area = math.sqrt(s * (s - a) * (s - b) * (s - c)) #replace this with your calculation for area
     return area
